@@ -8,4 +8,13 @@ test ("the first test", async({page})=>{
 })
 
 
+//test is afunction that we can use in the code 
+//test is a playwright function internally built by playwright itself so we can use it without creating
+//aa function. 
+
+//in javascript - we have a new concept of promise and asynchronous respose - so thatwhy we use 
+//async and await while execting the steps. 
+
+
+
 
