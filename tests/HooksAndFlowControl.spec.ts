@@ -8,6 +8,8 @@ test.beforeEach(async ({ page }) => {
 })
 
 //test suite 
+//if u want to skip any test suite - use test.describe.skip
+
 
 test.describe.skip("Suite 1", () => {
     test.beforeEach(async ({ page }) => {
@@ -38,3 +40,30 @@ test.describe("Suite 2", () => {
     })
 
 })
+
+
+//Practise :
+
+//practise1 - open app before every test
+
+test.describe.only("Suite 3",()=>{
+    test.beforeEach(async({page})=>{
+        await page.goto("http://localhost:4200/") 
+    })
+
+    test('Test1', async({page})=> {
+        await page.getByText("Extra Components").click();
+        await page.getByText("Calendar").click();
+    });
+
+})
+
+
+//practice2: navigation ReUse - navigate to forms section automatically
+//Move repeated steps into beforeeach 
+
+test.describe("", ()=>{
+
+    test
+})
+
