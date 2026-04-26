@@ -49,3 +49,8 @@ test("fetch the value in the email textbox of Using the Gring using parent to ch
     const textValueinEmail = await emailinput.inputValue();
     expect (textValueinEmail).toEqual('venkat@gmail.com')
 })
+
+
+//text.context 
+//alltext content 
+//input value 
