@@ -21,3 +21,8 @@ test ("Locating parent elements", async({page})=>{
     await page.locator(':text-is("Using the Grid")').locator('..').getByRole('textbox',{name:"Email"}).click();
 
 })
+
+//inorder to find a webelement  usng a locator method 
+//using text filter or locator filter and then chain the parent element 
+//use a filter method - benifit - using multiple filter 1 by  1
+//we can use xpath by using double dots and then locator. 
