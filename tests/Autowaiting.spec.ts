@@ -4,6 +4,7 @@ import { timeout } from 'rxjs-compat/operator/timeout';
 test.beforeEach(async({page})=>{
     await page.goto("http://uitestingplayground.com/ajax"); 
     await page.getByText('Button Triggering AJAX Request').click();  
+
 })
 
 // test ('auto waiting', async({page})=>{
@@ -26,10 +27,10 @@ test('Alternative Waits',async({page})=>{
     //___ wait for element 
     await page.waitForSelector('.bg-success')
 
-    //___wait for particular response 
+    //___wait for particular response
 
     await page.waitForResponse ('https://uitestingplayground.com/ajaxdata')
-    
+
     const buttonText = await successbutton.allTextContents();
     expect(buttonText).toContain('Data loaded with AJAX get request.')
 })

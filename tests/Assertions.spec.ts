@@ -25,7 +25,6 @@ test("Assertions", async({page})=>{
     //softasserion - when the test can be continued even if the assertion failed 
     await expect.soft(basicFormButton).toHaveText('Submit5');
     await basicFormButton.click();
-
     //softassertion not a really good practise 
     //when we have other validations then we can use soft assertion 
 
