@@ -19,3 +19,10 @@ test.describe("Form Layouts Page", ()=>{
         await UsingTheGridEmailInput.pressSequentially('test2@test.com', {delay:500})
     })
 })
+
+
+// .fill 
+//.clear 
+//presssequentially 
+//addtioanl arugemtn {delay:5000}
+//input value will extract the test filled inthe text box.
