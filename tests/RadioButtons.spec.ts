@@ -11,11 +11,8 @@ test('radio buttons', async({page})=>{
    //gettingby role
     const usingTheGridForm = page.locator('nb-card').filter({hasText:'Using the Grid'})
     await usingTheGridForm.getByRole('radio',{name:'Option 1'}).check({force:true})
-
     const radiostatus = await usingTheGridForm.getByRole('radio',{name:'Option 1'}).isChecked();
-
     expect(radiostatus).toBeTruthy();
-
 
     
     //getting by label 

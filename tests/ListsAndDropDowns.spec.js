@@ -69,16 +69,16 @@ for (const X in user) {
 
 //practise 3 - count how many props 
  
-const users = {
-  name: "Venkat",
-  age: 26,
-  role: "QA"
-};
+// const users = {
+//   name: "Venkat",
+//   age: 26,
+//   role: "QA"
+// };
 
-let count = 0;
+// //let count = 0;
 
-for (const k in users){
-    count++;
-}
+// for (const k in users){
+//     count++;
+// }
 
-console.log(count);
+// console.log(count);
