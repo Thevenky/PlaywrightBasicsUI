@@ -16,3 +16,8 @@ test("toolTips tests", async ({page})=>{
     expect(tooltip).toEqual('This is a tooltip');
 
 })
+
+// Inorder to locate the tooltip sometimes 
+//its challenging to locate the right locator - we can then use the sources tab and the commad+backslash
+//to make the page freeze and the use the elements tab to locate the locator.
+//if u see tooltip then hover method should come to ur mind. 
