@@ -51,5 +51,22 @@ test ("finding the data using column", async({page})=>{
 })
 
 
+//practise :
+
+test("practise", async({page})=>{
+    await page.goto("https://vinothqaacademy.com/webtable/");
+    await page.locator("#nameInput").fill("venkat");
+    await page.locator("#roleInput").fill("AEE");
+    await page.getByPlaceholder("Email Address").fill("venkat@test.com");
+    await page.getByPlaceholder("Location").fill("Delhi");
+    await page.getByPlaceholder("Department").fill("Irrigation");
+
+    await page.getByRole('button',{name:'Add Row'}).click();
+
+    const tableData = page.getByRole('row',{name:'venkat@test.com'});
+    await expect(tableData).toContainText('venkat@test.com')
+    
+})
+
 
 
